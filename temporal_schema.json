@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MOTH Temporal Structure Record",
+  "type": "object",
+  "required": [
+    "machine_version",
+    "timestamp",
+    "system_id",
+    "temporal_score"
+  ],
+  "properties": {
+    "machine_version": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "system_id": {
+      "type": "string"
+    },
+    "temporal_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "cross_scale_agreement": {
+      "type": "number"
+    },
+    "recurrence_mean": {
+      "type": "number"
+    },
+    "scale_concentration": {
+      "type": "number"
+    },
+    "oscillation_power_mean": {
+      "type": "number"
+    }
+  }
+}

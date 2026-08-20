@@ -1,0 +1,23 @@
+machine: MOTH-M1
+version: 1.0.0
+
+lags:
+  - 3
+  - 7
+  - 12
+  - 23
+
+spectral_windows:
+  - 12
+  - 24
+  - 48
+
+primary_metric:
+  name: brier_score
+  comparison: moth_vs_raw_state
+
+interpretation:
+  harmonic_means_measurable_periodicity_only: true
+
+freeze:
+  hash: sha256
